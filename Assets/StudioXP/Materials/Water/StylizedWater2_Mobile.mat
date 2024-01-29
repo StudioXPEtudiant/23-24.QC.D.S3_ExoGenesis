@@ -2,19 +2,26 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: StylizedWater2_Mobile
   m_Shader: {fileID: 4800000, guid: f04c9486b297dd848909db26983c9ddb, type: 3}
-  m_ShaderKeywords: _ENVIRONMENTREFLECTIONS_OFF _FLAT_SHADING _FOAM _NORMALMAP _RECEIVE_SHADOWS_OFF
-    _SHARP_INERSECTION _WAVES
+  m_ValidKeywords:
+  - _ENVIRONMENTREFLECTIONS_OFF
+  - _FLAT_SHADING
+  - _FOAM
+  - _NORMALMAP
+  - _RECEIVE_SHADOWS_OFF
+  - _SHARP_INERSECTION
+  - _WAVES
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -29,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMapLarge:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 88908a7c7a1f0ed418d1048378c17411, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CausticsTex:
@@ -99,11 +106,11 @@ Material:
     - _Blend: 0
     - _BumpScale: 1
     - _CROSSPAN_INTERSECTIONOn: 1
-    - _CausticsBrightness: 4.83
-    - _CausticsDistortion: 0.15
+    - _CausticsBrightness: 2
+    - _CausticsDistortion: 0.047
     - _CausticsOn: 0
     - _CausticsSpeed: 0.1
-    - _CausticsTiling: 0.5
+    - _CausticsTiling: 0.2
     - _CrossPan_IntersectionOn: 0
     - _Cull: 2
     - _Cutoff: 0.5
@@ -115,30 +122,30 @@ Material:
     - _DepthVertical: 4
     - _DisableDepthTexture: 0
     - _DstBlend: 0
-    - _EdgeFade: 7.37
+    - _EdgeFade: 18.7
     - _EnvironmentReflections: 1
     - _FlowSpeed: 1
     - _FoamOn: 0
     - _FoamOpacity: 0.253
-    - _FoamSize: 0.01
-    - _FoamSpeed: 0.030000014
-    - _FoamTiling: 0.049999908
+    - _FoamSize: 0.606
+    - _FoamSpeed: 0.06000001
+    - _FoamTiling: 0.09999993
     - _FoamWaveMask: 0
     - _FoamWaveMaskExp: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HorizonDistance: 2.8
-    - _IntersectionClipping: 0.428
+    - _HorizonDistance: 8
+    - _IntersectionClipping: 0.395
     - _IntersectionFalloff: 1
-    - _IntersectionLength: 1.79
-    - _IntersectionRippleDist: 64
-    - _IntersectionRippleStrength: 0.355
+    - _IntersectionLength: 2.27
+    - _IntersectionRippleDist: 16
+    - _IntersectionRippleStrength: 0.125
     - _IntersectionSize: 0.944
     - _IntersectionSource: 0
-    - _IntersectionSpeed: 0.06000001
+    - _IntersectionSpeed: 0.06999999
     - _IntersectionStyle: 1
-    - _IntersectionTiling: 0.16999984
+    - _IntersectionTiling: 0.13999975
     - _IntersectionWaveDist: 33.28
     - _LightingMode: 0
     - _Metallic: 0
@@ -147,8 +154,8 @@ Material:
     - _NormalMap: 1
     - _NormalMapOn: 1
     - _NormalSpeed: 0.2
-    - _NormalStrength: 1
-    - _NormalTiling: 0.29999992
+    - _NormalStrength: 0.202
+    - _NormalTiling: -0.48000008
     - _OcclusionStrength: 1
     - _PlanarReflectionsEnabled: 0
     - _PlanarReflectionsParams: 0
@@ -156,18 +163,18 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _ReflectionBlur: 0
-    - _ReflectionDistortion: 0.086
+    - _ReflectionDistortion: 0.0467
     - _ReflectionFresnel: 5
     - _ReflectionLighting: 1
-    - _ReflectionStrength: 0.248
+    - _ReflectionStrength: 0.335
     - _Reflectivity: 1
     - _RefractionAmount: 0.05
     - _RefractionOn: 0
-    - _RefractionStrength: 0.267
+    - _RefractionStrength: 1
     - _RimRize: 1
     - _RimTiling: 0.025
     - _SHARP_INERSECTIONOn: 1
-    - _ShadingMode: 0
+    - _ShadingMode: 1
     - _ShadowStrength: 1
     - _ShoreLineLength: 0
     - _ShoreLineWaveDistance: 23
@@ -175,14 +182,14 @@ Material:
     - _SimpleLighting: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SparkleIntensity: 4.53
-    - _SparkleSize: 0.497
+    - _SparkleIntensity: 0
+    - _SparkleSize: 0.302
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SunReflectionDistortion: 0.49
     - _SunReflectionPerturbance: 0.548
-    - _SunReflectionSize: 0.943
-    - _SunReflectionStrength: 1
+    - _SunReflectionSize: 0.932
+    - _SunReflectionStrength: 10
     - _Surface: 0
     - _TEXTURE_INTERSECTIONOn: 0
     - _Texture_IntersectionOn: 1
@@ -190,13 +197,13 @@ Material:
     - _Translucency: 0
     - _UnderwaterRefractionOffset: 0.2
     - _UnderwaterSurfaceSmoothness: 0.8
-    - _WaveCount: 1
-    - _WaveDistance: 0.763
-    - _WaveHeight: 0
-    - _WaveNormalStr: 0.291
-    - _WaveSpeed: 1
+    - _WaveCount: 2
+    - _WaveDistance: 0.775
+    - _WaveHeight: 0.1
+    - _WaveNormalStr: 0.1
+    - _WaveSpeed: 2.3999996
     - _WaveSteepness: 0
-    - _WaveTint: 0.029
+    - _WaveTint: 0
     - _WavesOn: 1
     - _WorkflowMode: 1
     - _WorldSpaceUV: 1
@@ -208,18 +215,18 @@ Material:
     - _DepthMapBounds: {r: -402.3, g: -459.43, b: 0.0012693577, a: 0}
     - _DistanceNormalParams: {r: 100, g: 300, b: 0.25, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.09803922}
-    - _HorizonColor: {r: 0.2352941, g: 0.9051294, b: 1, a: 1}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.22745098}
+    - _HorizonColor: {r: 0.68, g: 1, b: 0.99, a: 0.15}
     - _IntersectionColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShallowColor: {r: 0, g: 0.8446603, b: 1, a: 0.39607844}
+    - _ShallowColor: {r: 0, g: 1, b: 0.98136926, a: 0.3764706}
     - _SlopeParams: {r: 0.5, g: 4, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _TranslucencyParams: {r: 1, g: 4, b: 0, a: 0}
     - _VertexColorMask: {r: 0, g: 0, b: 0, a: 0}
     - _WaterColor: {r: 0.21176466, g: 0.6745098, b: 1, a: 1}
     - _WaterShallowColor: {r: 0, g: 0.9394503, b: 1, a: 1}
-    - _WaveDirection: {r: 1, g: 1, b: 1, a: 1}
+    - _WaveDirection: {r: -1, g: -1, b: -1, a: -1}
     - _WaveFadeDistance: {r: 150, g: 300, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6498140463000427223
