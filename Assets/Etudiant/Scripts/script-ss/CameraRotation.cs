@@ -4,23 +4,15 @@ using UnityEngine;
 
 public class CameraRotation : MonoBehaviour
 {
-    public Transform target; // The object the camera will rotate around
-    public float rotationSpeed = 5.0f; // Speed of rotation
+    public float rotationSpeed = 5f;
 
     void Update()
     {
-        // Check if target exists
-        if (target)
-        {
-            // Get the horizontal input for rotation
-            float mouseX = Input.GetAxis("Mouse X");
+        float mouseX = Input.GetAxis("Mouse X") * rotationSpeed;
+        float mouseY = Input.GetAxis("Mouse Y") * rotationSpeed;
 
-            // Calculate the rotation amount
-            float rotationAmount = mouseX * rotationSpeed;
-
-            // Rotate the camera around the target
-            transform.RotateAround(target.position, Vector3.up, rotationAmount);
-        }
+        transform.Rotate(Vector3.up, mouseX, Space.World);
+        transform.Rotate(Vector3.left, mouseY, Space.Self);
     }
 }
 
