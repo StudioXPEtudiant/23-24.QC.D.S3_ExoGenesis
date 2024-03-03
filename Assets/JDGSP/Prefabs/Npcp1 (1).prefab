@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   patrolSpeed: 1
-  seekSpeed: 10.5
+  seekSpeed: 2.9
   seekRange: 9
   fleeSpeed: 6
   fleeDistance: 4
