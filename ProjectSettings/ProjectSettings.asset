@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Les Trois
   productName: Exo Genesis
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -807,7 +807,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: READY_PLAYER_ME
+    Android: READY_PLAYER_ME;DREAMTECK_SPLINES;ODIN_VALIDATOR;ODIN_INSPECTOR;ODIN_INSPECTOR_3
     EmbeddedLinux: READY_PLAYER_ME
     GameCoreScarlett: READY_PLAYER_ME
     GameCoreXboxOne: READY_PLAYER_ME
@@ -854,8 +854,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template_3D
-  metroPackageVersion: 
+  metroPackageName: Template3D
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -863,7 +863,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Template_3D
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Exo Genesis
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
