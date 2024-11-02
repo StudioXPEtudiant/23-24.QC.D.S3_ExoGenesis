@@ -1,3 +1,4 @@
+using System;
 using StudioXP.Scripts.Events;
 using UnityEngine;
 using UnityEngine.Events;
@@ -16,6 +17,10 @@ namespace StudioXP.Scripts.Characters
 
         private int _health;
 
+        private void Update()
+        {
+            Debug.Log(_health);
+        }
         public int MaxValue
         {
             get => maxHealth;
