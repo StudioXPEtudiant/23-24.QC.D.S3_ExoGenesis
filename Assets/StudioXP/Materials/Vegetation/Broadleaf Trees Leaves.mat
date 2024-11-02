@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 4
+  version: 5
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -21,23 +21,23 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Broadleaf Trees Leaves
-  m_Shader: {fileID: 4800000, guid: c06c91c9416ad0f4e8a67d6103e77fdc, type: 3}
-  m_ValidKeywords:
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _ALPHATEST
+  - _BAKEDMESHDATA_OFF
   - _COLOR_TINT
+  - _INTERACTION_OFF
   - _LIGHTING_QUALITY_HIGH
   - _OVERLAY
   - _TRANSLUCENCY
   - _WIND
-  m_InvalidKeywords:
-  - _BAKEDMESHDATA_OFF
-  - _INTERACTION_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: -1
   stringTagMap:
-    RenderType: TreeTransparentCutout
+    RenderType: Opaque
   disabledShaderPasses:
   - MOTIONVECTORS
   - DistortionVectors
@@ -49,6 +49,10 @@ Material:
     m_TexEnvs:
     - _Albedo:
         m_Texture: {fileID: 2800000, guid: 6a922715b776eee4c8f959bb6cc60acd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -107,6 +111,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ThicknessMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -115,23 +123,41 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _AO: 0.95
+    - _AlphaClip: 0
     - _AlphaTest: 1
     - _AlphaTestThreshold: 0.5
     - _BakedMeshData: 0
     - _BaseLight: 0.263
+    - _Blend: 0
     - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
     - _ColorCorrection: 0
     - _ColorVariationSpread: 0.2
     - _Cull: 0
     - _Cutoff: 0.5
+    - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DoubleSidedMode: 2
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
     - _EmissionIntensity: 0
+    - _EnvironmentReflections: 1
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
@@ -145,14 +171,18 @@ Material:
     - _OcclusionStrength: 1
     - _Overlay: 1
     - _Parallax: 0.02
+    - _QueueOffset: 0
     - _RecalculateWindNormals: 0.5
+    - _ReceiveShadows: 1
     - _SampleAlphaOverlay: 1
     - _SampleColorOverlay: 1
     - _Shininess: 0.5
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SquashAmount: 1
     - _SrcBlend: 1
+    - _Surface: 0
     - _SurfaceMapMethod: 2
     - _Translucency: 1
     - _TranslucencyAmbient: 0.5
@@ -167,8 +197,10 @@ Material:
     - _WindQuality: 3
     - _WindStrength: 1
     - _WindVariation: 1
+    - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - _BaseColor: {r: 1, g: 0.67145586, b: 0, a: 1}
     - _Color: {r: 1, g: 0.67145586, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GlossRemap: {r: 0, g: 1, b: 0, a: 0}
@@ -176,6 +208,7 @@ Material:
     - _HSLVariation: {r: -0.02, g: -0.05, b: -0.1, a: 0}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _OcclusionRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _Tint: {r: 1, g: 0.67145586, b: 0, a: 1}
     - _TintVariation: {r: 1, g: 0.67145586, b: 0, a: 1}
